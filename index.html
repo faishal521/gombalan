@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>What?</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Kode Gabut</h2>
+        <form action="gombalan.php" method="post">
+            <label for="nama">Masukkan Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            <button type="submit">Kirim</button>
+        </form>
+        <div class="result">
+            <?php include('gombalan.php'); ?>
+        </div>
+    </div>
+</body>
+</html>
